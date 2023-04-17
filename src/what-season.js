@@ -17,7 +17,7 @@ function getSeason(date) {
   }
 
   if (!(date instanceof Date)) {
-    throw new Error("Invalid date!");
+    return `Error: "Invalid date!"`;
   }
 
   const month = date.getMonth();
